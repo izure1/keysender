@@ -15,9 +15,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm ci
-        env:
-          npm_config_build_from_source: false
+      - run: npm install --ignore-scripts
       - run: npm test
 
   publish-npm:
@@ -29,9 +27,7 @@ jobs:
         with:
           node-version: 22
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
-        env:
-          npm_config_build_from_source: false
+      - run: npm install --ignore-scripts
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
