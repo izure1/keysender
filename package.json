@@ -1,6 +1,6 @@
 {
-  "name": "keysender",
-  "version": "2.3.0",
+  "name": "@io-utils/keysender",
+  "version": "2.3.1",
   "description": "Node.js keyboard and mouse inputs emulator, global hotkey register for Windows",
   "keywords": [
     "automation",
@@ -27,13 +27,13 @@
   "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Krombik/keysender.git"
+    "url": "git+https://github.com/izure1/keysender.git"
   },
   "author": "Krombik",
   "license": "MIT",
   "gypfile": true,
   "bugs": {
-    "url": "https://github.com/Krombik/keysender/issues"
+    "url": "https://github.com/izure1/keysender/issues"
   },
   "homepage": "https://github.com/Krombik/keysender#readme",
   "dependencies": {
